@@ -30,7 +30,7 @@ lottie_coding = load_lottieurl("https://lottie.host/c99c230b-42a1-43f8-9186-f517
 @st.cache_data
 def load_data():
     # Ensure the data path is correct and accessible
-    df = pd.read_csv('/Users/benedettasabatino/Desktop/website1/dataset_uni_variables.csv', delimiter=';')
+    df = pd.read_csv('dataset_uni_variables.csv', delimiter=';')
     return df
 
 df = load_data() 
