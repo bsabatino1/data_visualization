@@ -17,7 +17,7 @@ def local_css(file_name):
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Apply CSS styles
-local_css("/Users/benedettasabatino/Desktop/website1/style.css")
+local_css("style.css")
 
 def load_lottieurl(url):
     r = requests.get(url)
