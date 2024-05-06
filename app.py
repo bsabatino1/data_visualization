@@ -344,15 +344,15 @@ def introduction():
 def user_behaviour_page():
     st.title("User behaviour")
 
-    st.title("Users habits")
+    st.subheader("Users habits")
     gender_filter = st.selectbox("Select Gender:", ['All', 'Male', 'Female', 'Other'])
     sankey_fig = create_sankey(df, gender_filter)
     st.plotly_chart(sankey_fig)
 
-    st.title("Subscription behaviour")
+    st.subheader("Subscription behaviour")
     create_subscription_dashboard(df)
 
-    st.title("Watch behaviour")
+    st.subheader("Watch behaviour")
     fig = create_violin_plot(df)
     st.plotly_chart(fig)
 
@@ -363,20 +363,20 @@ def user_behaviour_page():
 def user_feedback_page():
     st.title("User feedback")
 
-    st.title("Reason for not having netflix")
+    st.subheader("Reason for not having netflix")
     create_donut_chart(df)
     
-    st.title("Client feedback")
+    st.subheader("Client feedback")
     create_radar_chart(df)
 
 # Page 3: Sunburst Chart
 def sunburst_page():
     st.title("User preferences")
     
-    st.title("Preferred genres")
+    st.subheader("Preferred genres")
     create_sunburst_chart(df)
 
-    st.title("Time preferences in the different platforms")
+    st.subheader("Time preferences in the different platforms")
     creative_plot()
 
 # Setup pages
