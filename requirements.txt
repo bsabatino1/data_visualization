@@ -3,3 +3,4 @@ plotly
 numpy
 matplotlib
 streamlit_lottie 
+joypy
