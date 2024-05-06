@@ -356,7 +356,7 @@ def user_behaviour_page():
     fig = create_violin_plot(df)
     st.plotly_chart(fig)
 
-    st.title("Weekly usage trends")
+    st.subheader("Weekly usage trends")
     create_ridgeline_plot(df)
 
 # Page 2: User Feedback
